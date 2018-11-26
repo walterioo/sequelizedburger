@@ -1,0 +1,25 @@
+{
+  "name": "burger",
+  "version": "1.0.0",
+  "description": "eat-da-burger!",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/walterioo/burger.git"
+  },
+  "author": "Walter Almada",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/walterioo/burger/issues"
+  },
+  "homepage": "https://github.com/walterioo/burger#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
+    "mysql": "^2.16.0",
+    "sequelize": "^4.41.2"
+  }
+}

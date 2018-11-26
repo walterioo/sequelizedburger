@@ -1,0 +1,47 @@
+<div class="col-12 text-center">
+    <h1 class="display-3">Burger Wish List</h1>
+    <h2>The ultimate burger wish list</h2>
+    <img src="/assets/img/burger.png" alt="" srcset="">
+
+</div>
+
+<div class="row text-center">
+    <div class="col-1"></div>
+    <div class="col-5 border-bottom mx-1">
+        <span class="h4"> To devour!</span>
+        <ol class="text-left">
+            {{#each burger}}
+                {{#unless devoured}}
+                    {{>burger-block}}
+                {{/unless}}
+            {{/each}}
+        </ol>
+    </div>
+    <div class="col-5 border-bottom">
+        <span class="h4">Devoured</span>
+        <ol class="text-left"> 
+            {{#each burger}}
+                {{#if devoured}}
+                    <li>
+                        {{burger_name}}
+                    </li>
+                {{/if}}
+            {{/each}}
+        </ol>
+    </div>
+    <div class="col-1"></div>
+</div>
+
+<div class="row mt-3 text-center">
+    <div class="col-2"></div>
+    <div class="col-8 text-center">
+        <h2>Add a Burger</h2>
+        <form class="create-form">
+            <div class="form-group input-group-lg">
+                <input class="form-control" type="text" id="burger" name="name" placeholder="Your new burger"></input>
+                <button class="mt-1 btn btn-light btn-lg" type="submit">Add it!</button>
+            </div>
+        </form>
+    </div>
+    <div class="col-2"></div>
+</div>
